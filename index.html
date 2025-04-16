@@ -6,13 +6,101 @@
     <title>Document</title>
 </head>  
 <style>
-          .profile-pic {
+ *  {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: #fff;
+        padding: 2rem;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background-color: #ffffff15;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      }
+      
+      .profile-card {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      
+      .profile-pic {
         width: 120px;
         height: 120px;
         border-radius: 50%;
         border: 4px solid #fff;
-        margin-bottom: 1rem;}
-          img {
+        margin-bottom: 1rem;
+      }
+      
+      .profile-card h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .profile-card p {
+        font-style: italic;
+        color: #ccc;
+      }
+      
+      .data-table h3 {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #ffffff10;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ffffff20;
+      }
+      
+      th {
+        background-color: #ffffff15;
+      }
+      
+      td {
+        color: #f0f0f0;
+      }
+      
+      tr:hover {
+        background-color: #ffffff20;
+      }
+
+      table {
+        width: 80%;
+        margin: 50px auto;
+        border-collapse: collapse;
+      }
+  
+      th, td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+  
+      img.profile-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;}
+
+      td:nth-child(4) img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -20,20 +108,47 @@
 
 </style>
 <body>
+    <div class="profile-card">
     <section>
     <h1>perancangan web</h1>
-    <img src="profile_Web/file.webp" alt="">
+    <img src="profile_Web/file.webp" alt="Profile Picture" class="profile-pic"style="
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    horder"/>
     </section>
+
     <thead>
 <tr>
         <th><h2>nama web:raffi pasya</h2>
-            <h2>nim:1124160207</h2>
-            <h2>universitas: global institute</h2>
-        
-
-    
     </tr>
 </thead>
+<table>
+    <tr>
+       </a>
+       <td>nama</td>
+        <td>raffi pasya</td>
+        <tr>
+    <td>nim:</td>
+    <td>1124160207</td>
+    </tr>
+       <tr><td>universitas:</td> 
+       <td>global institute</td></tr>
+       <tr>
+       <td>semester</td>
+       <td>2</td>
+    </tr>
+
+       <tr>
+        <td>mata kuliah: </td>
+        <td>TI CDM</td>
+    </tr>
+       
+
+    </tr>
+</table>
+
 <table>
 
  
@@ -42,5 +157,6 @@
 </td>
 </tr>
 </table>
+</div>
 </body>
 </html>
